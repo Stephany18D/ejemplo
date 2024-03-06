@@ -1,9 +1,9 @@
 #include <iostream>
-
+using namespace std;
 int ejercicio12() {
     int numero;
-    std::cout << "Ingrese un numero: ";
-    std::cin >> numero;
+    cout << "Ingrese un numero: ";
+    cin >> numero;
 
     int factorPrimo = 2;
 
@@ -15,7 +15,7 @@ int ejercicio12() {
         }
     }
 
-    std::cout << "El mayor factor primo de " << numero << " es: " << factorPrimo  << std::endl;
+    cout << "El mayor factor primo de " << numero << " es: " << factorPrimo  << std::endl;
 
     return 0;
 }
