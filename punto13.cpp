@@ -1,5 +1,5 @@
 #include <iostream>
-
+using namespace std;
 bool esPrimo(int num) {
     if (num <= 1) {
         return false;
@@ -14,8 +14,8 @@ bool esPrimo(int num) {
 
 int ejercicio13() {
     int numero;
-    std::cout << "Ingrese un numero: ";
-    std::cin >> numero;
+    cout << "Ingrese un numero: ";
+    cin >> numero;
 
     int suma = 0;
     for (int i = 2; i < numero; i++) {
@@ -24,7 +24,8 @@ int ejercicio13() {
         }
     }
 
-    std::cout << "El resultado de la suma es: " << suma << std::endl;
+    cout << "El resultado de la suma es: " << suma << std::endl;
 
     return 0;
 }
+
