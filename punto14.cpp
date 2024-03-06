@@ -1,7 +1,6 @@
 #include <iostream>
 using namespace std;
 
-// Función para verificar si un número es palíndromo
 bool esPalindromo(int num) {
     int original = num;
     int invertido = 0;
