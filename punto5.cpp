@@ -1,45 +1,44 @@
 #include <iostream>
 
-using namespace std;
-
 int ejercicio5() {
-  int n, i, j, espacios;
+    int tamano = 0;
+    int i = 0;
+    int espacios = 0;
+    int asteriscos = 0;
 
-  cout << "Ingrese un número entero impar: ";
-  cin >> n;
+    std::cout << "Ingrese un numero impar para el tamaño del patrun: ";
+    std::cin >> tamano;
 
-  if (n % 2 == 0) {
-    cout << "El número debe ser impar." << endl;
-    return 1;
-  }
-
-  espacios = n / 2;
-
-  for (i = 1; i <= n; i += 2) {
-    for (j = 1; j <= espacios; j++) {
-      cout << " ";
+    while (tamano % 2 == 0) {
+        std::cout << "Por favor ingrese un numero impar: ";
+        std::cin >> tamano;
     }
-    for (j = 1; j <= i; j++) {
-      cout << "*";
-    }
-    cout << endl;
-    espacios--;
-  }
 
-  espacios = 1;
-
-  for (i = n - 2; i >= 1; i -= 2) {
-    for (j = 1; j <= espacios; j++) {
-      cout << " ";
+    for (i = 1; i <= tamano; i += 2) {
+        espacios = (tamano - i) / 2;
+        asteriscos = i;
+        for (int j = 0; j < espacios; j++) {
+            std::cout << " ";
+        }
+        for (int j = 0; j < asteriscos; j++) {
+            std::cout << "*";
+        }
+        std::cout << "\n";
     }
-    for (j = 1; j <= i; j++) {
-      cout << "*";
-    }
-    cout << endl;
-    espacios++;
-  }
 
-  return 0;
+    for (i = tamano - 2; i > 0; i -= 2) {
+        espacios = (tamano - i) / 2;
+        asteriscos = i;
+        for (int j = 0; j < espacios; j++) {
+            std::cout << " ";
+        }
+        for (int j = 0; j < asteriscos; j++) {
+            std::cout << "*";
+        }
+        std::cout << "\n";
+    }
+
+    return 0;
 }
 
 
