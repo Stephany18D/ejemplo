@@ -1,12 +1,12 @@
 #include <iostream>
-
+using namespace std;
 int ejercicio10() {
     int n;
     int primo = 2;
     int contador = 1;
 
-    std::cout << "Ingrese un numero n: ";
-    std::cin >> n;
+    cout << "Ingrese un numero n: ";
+    cin >> n;
 
     while (contador <= n) {
         bool esPrimo = true;
@@ -28,7 +28,7 @@ int ejercicio10() {
         primo++;
     }
 
-    std::cout << "El primo numero " << n << " es: " << primo << std::endl;
+    cout << "El primo numero " << n << " es: " << primo << std::endl;
 
     return 0;
 }
